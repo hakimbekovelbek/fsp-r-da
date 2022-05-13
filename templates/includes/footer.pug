@@ -1,0 +1,55 @@
+mixin info-list(title, arr)
+    .col-12.col-sm-4
+            h4.menu__title.mb-4= title
+            ul
+                each item in arr
+                li
+                a(href='#')= item
+                
+
+mixin footer(theme)
+    section.footer.mt-5
+    .footer__img
+        .container
+        .row.py-5
+            .col-12.col-sm-4
+            h4.menu__title.mb-4 Курсы
+            ul
+                li
+                a(href='#') Дизайн
+                li
+                a(href='#') Програмирование
+                li
+                a(href='#') Маркетинг
+            .col-12.col-sm-4
+            h4.menu__title.mb-4 Дизайн
+            ul
+                li
+                a(href='#') Графический Дизайн
+                li
+                a(href='#') UI/UX Дизайн
+                li
+                a(href='#') Motion дизайн
+            .col-12.col-sm-4
+            h4.menu__title.mb-4 Маркетинг
+            ul
+                li
+                a(href='#') Цифровой Маркетинг
+                li
+                a(href='#') SMM Pro
+                li
+                a(href='#') Youtube
+                li
+                a(href='#') Targeting
+        .row.py-4
+            .col-2
+            a(href='./index.html')
+                img(src='../assets/icons/navbar-logo.svg', alt='Footer logo icon')
+            .col-7
+            .social-networks-box.col-2
+            a.social-networks(href='#')
+                img(src='../assets/icons/facebook.svg', alt='Facebook icon')
+            a.social-networks.mx-3(href='#')
+                img(src='../assets/icons/instagram.svg', alt='Instagram icon')
+            a.social-networks(href='#')
+                img(src='../assets/icons/telegram.svg', alt='Telegram icon')
