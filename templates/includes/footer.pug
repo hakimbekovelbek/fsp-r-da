@@ -9,7 +9,7 @@ mixin info-list(title, arr)
                             a(href='#')= item
                 
 mixin footer(theme)
-    .footer
+    .footer(class=theme)
         .container
             .row
                 +info-list('Направления', ['Дизайн', 'Програмирование', 'Маркетинг'])
