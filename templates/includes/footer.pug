@@ -8,21 +8,21 @@ mixin info-list(title, arr)
                 
 mixin footer(theme)
     section.footer.mt-5
-    .footer__img
-        .container
-        .row.py-5
-            +info-list('Направления', ['Дизайн', 'Програмирование', 'Маркетинг', 'Hello'])
-            +info-list('Дизайн', ['Графический Дизайн', 'UI/UX Дизайн', 'Motion дизайн'])
-            +info-list('Маркетинг', ['Цифровой Маркетинг', 'SMM Pro', 'Youtube', 'Targeting'])
-        .row.py-4
-            .col-2
-                a(href='./index.html')
-                    img(src='../assets/icons/navbar-logo.svg', alt='Footer logo icon')
-            .col-7
-                .social-networks-box.col-2
-                a.social-networks(href='#')
-                    img(src='../assets/icons/facebook.svg', alt='Facebook icon')
-                a.social-networks.mx-3(href='#')
-                    img(src='../assets/icons/instagram.svg', alt='Instagram icon')
-                a.social-networks(href='#')
-                    img(src='../assets/icons/telegram.svg', alt='Telegram icon')
+        .footer__img
+            .container
+                .row.py-5
+                    +info-list('Направления', ['Дизайн', 'Програмирование', 'Маркетинг', 'Hello'])
+                    +info-list('Дизайн', ['Графический Дизайн', 'UI/UX Дизайн', 'Motion дизайн'])
+                    +info-list('Маркетинг', ['Цифровой Маркетинг', 'SMM Pro', 'Youtube', 'Targeting'])
+                .row.py-4
+                    .col-2
+                        a(href='./index.html')
+                            img(src='../assets/icons/navbar-logo.svg', alt='Footer logo icon')
+                    .col-7
+                        .social-networks-box.col-2
+                        a.social-networks(href='#')
+                            img(src='../assets/icons/facebook.svg', alt='Facebook icon')
+                        a.social-networks.mx-3(href='#')
+                            img(src='../assets/icons/instagram.svg', alt='Instagram icon')
+                        a.social-networks(href='#')
+                            img(src='../assets/icons/telegram.svg', alt='Telegram icon')
