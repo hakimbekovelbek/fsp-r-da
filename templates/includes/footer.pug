@@ -7,6 +7,12 @@ mixin info-list(title, arr)
                     each item in arr
                         li
                             a(href='#')= item
+
+mixin icons(arr)
+    each item in arr
+        a.social-networks(href='#')
+            img(src='../assets/icons/' + item + '.svg', alt= item + ' ' + 'icon')
+
                 
 mixin footer(theme)
     .footer(class=theme)
@@ -21,9 +27,4 @@ mixin footer(theme)
                         img(src='../assets/icons/navbar-logo.svg', alt='Footer logo icon')
                 .col-7
                     .social-networks-box.col-2
-                    a.social-networks(href='#')
-                        img(src='../assets/icons/facebook.svg', alt='Facebook icon')
-                    a.social-networks.mx-3(href='#')
-                        img(src='../assets/icons/instagram.svg', alt='Instagram icon')
-                    a.social-networks(href='#')
-                        img(src='../assets/icons/telegram.svg', alt='Telegram icon')
+                        +icons(['facebook', 'instagram', 'telegram'])`
