@@ -1,8 +1,12 @@
 include ../includes/head
 include ../includes/footer
+include ../includes/nav
 
 doctype html
 html(lang="en")
     +head('Home | Digital Akademia')
     body
+        nav.header__nav.navbar
+            -nav_list={"./block.html":"Блок", "./course.html":"Курсы", "#footer":"Контакты", "./about.html":"О нас"}
+            +nav(nav_list)
         +footer('footer-bg-primary')
