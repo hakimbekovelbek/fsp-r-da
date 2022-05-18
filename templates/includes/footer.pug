@@ -3,10 +3,10 @@ mixin info-list(title, arr)
         .footer-card
             h4.footer-card__title.mb-4= title
             div.footer-card__content
-                ul
+                ul.card__items
                     each item in arr
-                        li
-                            a(href='#')= item
+                        li.card__items-item
+                            a(href='#').card__items-item= item
                 
 mixin footer(theme)
     .footer(class=theme)
@@ -15,15 +15,18 @@ mixin footer(theme)
                 +info-list('Направления', ['Дизайн', 'Програмирование', 'Маркетинг'])
                 +info-list('Дизайн', ['Графический Дизайн', 'UI/UX Дизайн', 'Motion дизайн'])
                 +info-list('Маркетинг', ['Цифровой Маркетинг', 'SMM Pro', 'Youtube', 'Targeting'])
-            .row
-                .col-2
-                    a(href='./index.html')
-                        img(src='../assets/icons/navbar-logo.svg', alt='Footer logo icon')
-                .col-7
-                    .social-networks-box.col-2
-                    a.social-networks(href='#')
-                        img(src='../assets/icons/facebook.svg', alt='Facebook icon')
-                    a.social-networks.mx-3(href='#')
-                        img(src='../assets/icons/instagram.svg', alt='Instagram icon')
-                    a.social-networks(href='#')
-                        img(src='../assets/icons/telegram.svg', alt='Telegram icon')
+            .bottom    
+                .row
+                    .col-10
+                        a(href='./index.html')
+                            img(src='/assets/images/logo.svg', alt='Footer logo icon')
+                    .col-2
+                        .social-networks-box.col-2
+                        a.social-networks(href='#') 
+                            img(src='/assets/images/Vector.png', alt='Facebook icon')
+                        a.social-networks.mx-3(href='#')
+                            img(src='/assets/images/Vector(1).png', alt='Instagram icon')
+                        a.social-networks(href='#')
+                            img(src='/assets/images/Vector(2).png', alt='Telegram icon')
+
+                        
