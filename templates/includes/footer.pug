@@ -5,7 +5,13 @@ mixin info-list(title, arr)
                 each item in arr
                     li
                         a(href='#')= item
-                
+
+mixin icons(arr)
+    each item in arr
+        a.social-networks(href='#')
+            img(src='../assets/icons/telegram.svg', alt='Telegram icon')   
+
+
 mixin footer(theme)
     section.footer.mt-5
     .footer__img
