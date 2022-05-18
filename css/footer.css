@@ -1,0 +1,17 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  height: 742px;
+}
+.footer-bg-primary {
+  background: url(/assets/images/footer_bg_primary.svg) 0 0/cover;
+}
+.footer-bg-secondary {
+  background: url(/assets/images/footer_bg_secondary.svg) 0 0/cover;
+}
+.footer-card__content ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+/*# sourceMappingURL=footer.css.map */
