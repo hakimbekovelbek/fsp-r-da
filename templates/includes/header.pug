@@ -1,0 +1,29 @@
+mixin header(theme)
+    .header(class='header-bg-' + theme)
+        .container
+            .row 
+                .col 
+                    .nav 
+                        .nav__logo 
+                            img(src="/assets/images/logo.svg", alt="Digital Akademia Logo")
+                        ul.nav__list
+                            li.nav__item 
+                                a.nav__link(href='#') Блог
+                            li.nav__item 
+                                a.nav__link(href='#') Курсы
+                            li.nav__item 
+                                a.nav__link(href='#') Контакты
+                            li.nav__item 
+                                a.nav__link(href='#') О нас
+                        .nav__lang 
+                            button.nav__lang-select
+                                span Ру
+                                img(src="/assets/icons/chevron-down.svg", alt="chevron down icon")
+                            .nav__lang-options
+                                ul
+                                    li En
+                                    li O'z
+                        .nav__contact 
+                            a(href="tel:+998909999797") 
+                                img(src="/assets/icons/call.svg", alt="")  
+                                span +99890 999 9797          
