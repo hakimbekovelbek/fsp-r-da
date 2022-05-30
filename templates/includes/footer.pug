@@ -9,24 +9,16 @@ mixin info-list(title, arr)
                             a(href='#').card__items-item= item
                 
 mixin footer(theme)
-    .footer(class=theme)
+    .footer(class='footer-bg-' + theme)
         .container
             .row
                 +info-list('Направления', ['Дизайн', 'Програмирование', 'Маркетинг'])
                 +info-list('Дизайн', ['Графический Дизайн', 'UI/UX Дизайн', 'Motion дизайн'])
                 +info-list('Маркетинг', ['Цифровой Маркетинг', 'SMM Pro', 'Youtube', 'Targeting'])
-            .bottom    
-                .row
-                    .col-10
-                        a(href='./index.html')
-                            img(src='/assets/images/logo.svg', alt='Footer logo icon')
-                    .col-2
-                        .social-networks-box.col-2
-                        a.social-networks(href='#') 
-                            img(src='/assets/images/Vector.png', alt='Facebook icon')
-                        a.social-networks.mx-3(href='#')
-                            img(src='/assets/images/Vector(1).png', alt='Instagram icon')
-                        a.social-networks(href='#')
-                            img(src='/assets/images/Vector(2).png', alt='Telegram icon')
-
-                        
+            .row
+                .col-9
+                    a(href='./index.html')
+                        img(src='../assets/images/logo.svg', alt='Footer logo icon')
+                //- .col-3
+                //-     .social-networks-box
+                //-         +icons(['facebook', 'instagram', 'telegram'])

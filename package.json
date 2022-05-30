@@ -11,7 +11,7 @@
   "author": "Elbek Khakimbekov",
   "license": "ISC",
   "devDependencies": {
-    "concurrently": "^7.1.0",
+    "concurrently": "^7.2.1",
     "pug-cli": "^1.0.0-alpha6",
     "sass": "^1.51.0"
   }
