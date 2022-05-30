@@ -15,16 +15,16 @@ mixin icons(arr)
 
                 
 mixin footer(theme)
-    .footer(class=theme)
+    .footer(class='footer-bg-' + theme)
         .container
             .row
                 +info-list('Направления', ['Дизайн', 'Програмирование', 'Маркетинг'])
                 +info-list('Дизайн', ['Графический Дизайн', 'UI/UX Дизайн', 'Motion дизайн'])
                 +info-list('Маркетинг', ['Цифровой Маркетинг', 'SMM Pro', 'Youtube', 'Targeting'])
             .row
-                .col-2
+                .col-9
                     a(href='./index.html')
-                        img(src='../assets/icons/navbar-logo.svg', alt='Footer logo icon')
-                .col-7
-                    .social-networks-box.col-2
-                        +icons(['facebook', 'instagram', 'telegram'])`
+                        img(src='../assets/images/logo.svg', alt='Footer logo icon')
+                .col-3
+                    .social-networks-box
+                        +icons(['facebook', 'instagram', 'telegram'])
