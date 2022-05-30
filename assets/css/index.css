@@ -7,9 +7,6 @@ body {
 }
 
 .header {
-  display: flex;
-  justify-content: center;
-  height: 25rem;
   color: #fff;
 }
 .header-bg-primary {
@@ -18,12 +15,37 @@ body {
 .header-bg-secondary {
   background-color: #444444;
 }
+.header .hero {
+  height: 41.25rem;
+  background: url(/assets/images/hat.png) no-repeat right center/560px;
+}
+.header .hero h1 {
+  font-size: 90px;
+}
+.header .hero__btn {
+  width: 15rem;
+  height: 3.75rem;
+  border: 2px solid #fff;
+  margin-right: 30px;
+  border-radius: 50px;
+  font-family: inherit;
+  font-size: 1.125rem;
+  background-color: transparent;
+  color: #fff;
+}
+.header .hero__play-btn {
+  background-color: transparent;
+  border: none;
+}
 
 .nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-top: 3.125rem;
   color: #fff;
+  font-size: 20px;
+  font-weight: 700;
 }
 .nav__list {
   display: flex;
@@ -34,6 +56,63 @@ body {
 .nav__link {
   color: inherit;
   text-decoration: none;
+}
+.nav__lang {
+  position: relative;
+}
+.nav__lang-select {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+.nav__lang-select:hover + .nav__lang-options {
+  display: block;
+}
+.nav__lang-select span {
+  margin-right: 10px;
+}
+.nav__lang-options {
+  display: none;
+  position: absolute;
+  top: 30px;
+  width: 58px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 20px 50px rgba(68, 68, 68, 0.1);
+}
+.nav__lang-options ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  padding: 5px;
+  margin: 0;
+}
+.nav__lang-options ul li {
+  padding: 7px;
+  cursor: pointer;
+  list-style-type: none;
+  color: #444;
+  font-size: 12px;
+}
+.nav__lang-options ul li:first-child {
+  border-bottom: 1px solid #000;
+}
+.nav__lang-options ul li:hover {
+  color: #888;
+}
+.nav__contact a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+.nav__contact a span {
+  margin-left: 10px;
 }
 
 .footer {
